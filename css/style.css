@@ -1,4 +1,449 @@
-.collection-img{
-  display: inline-flex;
-  flex-direction: column;
+@font-face {
+  font-family: "MontserratRegular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "MontserratBold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayBoldItalic";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/playfair-display-bold-italic.woff2") format("woff2"), url("../fonts/playfair-display-bold-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PlayfairDisplayItalic";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/playfair-display-italic.woff2") format("woff2"), url("../fonts/playfair-display-italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/raleway-regular.woff2") format("woff2"), url("../fonts/raleway-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/raleway-bold.woff2") format("woff2"), url("../fonts/raleway-bold.woff") format("woff");
+}
+
+/* навигация */
+.logo {
+  font-family: "MontserratBoald", sans-serif;
+  font-size: 34px;
+  color: #000000;
+}
+
+.nav-link-bnt {
+  padding: 10px 6px;
+
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.nav-link-bnt:hover {
+  background-color: #00b0ff;
+  color: #ffffff;
+}
+
+.link-social-network {
+  display: flex;
+  width: 32px;
+  height: 32px;
+
+  justify-content: center;
+
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+/* слоган */
+.slogan {
+  font-family: "PlayfairDisplayBoldItalic", sans-serif;
+  font-size: 50px;
+  color: #000000;
+}
+
+.slogan > p:last-child {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* предложкеа surfboards */
+
+.surfboards{
+  background: url('../img/background.jpg') no-repeat;
+  background-size: cover;
+}
+
+.bnt-next-slide,
+.bnt-prev-slide {
+  position: absolute;
+  display: inline;
+  padding: 11px;
+  top: 82px;
+  left: auto;
+  right: 0;
+  border: 0;
+  background: #f2d800;
+}
+
+.bnt-prev-slide:hover {
+  background: #c7b300;
+}
+
+.bnt-next-slide:hover {
+  background: #c7b300;
+}
+
+.bnt-next-slide {
+  right: -38px;
+}
+
+.arrow {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background: url("../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.bnt-next-slide > .arrow {
+  transform: rotate(180deg);
+}
+
+.surfboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 57px 50px 72px;
+}
+
+.title-section-surfboards {
+  position: absolute;
+  top: 37%;
+  right: -288px;
+  font-size: 150px;
+  transform: rotate(-90deg);
+}
+
+.imgs-porduct {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.tab-imgs .tab-img {
+  margin: 3px;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+}
+
+.tab-imgs .tab-img.active {
+  border: 3px solid #00b0ff;
+}
+
+.title-poduct {
+  width: 329px;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+
+.tab-product-text {
+  margin-top: 42px;
+  font-family: "RalewayBold", sans-serif;
+  font-size: 14px;
+  color: #8a8a8a;
+  border-bottom: 1px solid #8a8a8a;
+}
+
+.nav-link.tab-product-text:hover {
+  border: 1px solid transparent;
+}
+
+.product-texts .tab-product-text.active {
+  color: #000000;
+  border: none;
+  border-bottom: 3px solid #00b0ff;
+}
+
+.tab-product-text-content {
+  margin-top: 32px;
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 16px;
+  color: #8a8a8a;
+}
+
+.product-price {
+  display: inline-block;
+  margin-right: 32px;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 24px;
+}
+
+.bnt-base {
+  display: inline-block;
+  padding: 16px 30px;
+  text-align: center;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  border: none;
+  background-color: #00b0ff;
+  transition: 0.2s;
+}
+
+.bnt-base:hover {
+  color: #000000;
+  background-color: #cccccc;
+}
+
+.block-link-view {
+  margin-top: 90px;
+}
+
+.link-view {
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 16px;
+  color: #00b0ff;
+  text-decoration: none;
+  border-bottom: 2px solid #00b0ff;
+}
+
+.title-section-fullscreen {
+  font-size: 196px;
+}
+
+.img-full-width-screen {
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+}
+
+.subtitle {
+  margin: 0;
+
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+.cross {
+  display: block;
+  margin-top: 21px;
+}
+
+.block-text-italic {
+  width: 341px;
+  text-align: left;
+  font-family: "PlayfairDisplayItalic", sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+.carousel-employees {
+  position: relative;
+}
+
+.carousel-inner-employees.carousel-inner {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 80%;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards-employees {
+  display: flex;
+  margin-left: 20px;
+}
+
+.cards-employees .card {
+  width: 260px;
+  margin-left: -20px;
+}
+
+.cards-employees .card:nth-child(2n) {
+  position: relative;
+  top: 30px;
+  z-index: 1;
+}
+
+.card-employee-title {
+  margin: 0;
+
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 18px;
+  color: #00b0ff;
+}
+
+.card-employee{
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.card-employee:hover {
+  background-color: #00b0ff;
+}
+
+.card-employee:hover .card-employee-title {
+  color: #ffffff;
+}
+
+.card-employee:hover .id-employee {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.card-employee:hover .waves {
+  background-image: url('data:image/svg+xml;utf8,<svg width="33" height="6" viewBox="0 0 33 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 5L4.5 1.5L7.5 4.5L10.5 1.5L13.5 4.5L16.5 1.5L19.5 4.5L22.5 1.5L25.5 4.5L28.5 1.5L31.5 4.5" stroke="rgb(0, 34, 255)" stroke-width="2"/></svg>');
+}
+
+.card-employee:hover .address {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.id-employee {
+  margin: 0;
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.waves {
+  display: inline-block;
+  width: 31px;
+  height: 6px;
+  margin-top: 15px;
+  background-image: url('data:image/svg+xml;utf8,<svg width="33" height="6" viewBox="0 0 33 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 5L4.5 1.5L7.5 4.5L10.5 1.5L13.5 4.5L16.5 1.5L19.5 4.5L22.5 1.5L25.5 4.5L28.5 1.5L31.5 4.5" stroke="rgb(100, 100, 100)" stroke-width="2"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  
+}
+
+.address {
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 47px;
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+}
+
+.address::before {
+  margin-right: 5px;
+  content: url("../img/icons/pin.png");
+}
+
+.avatar {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  margin: 30px auto;
+  margin-bottom: 0;
+}
+
+.carasousel-employees-contorol-next,
+.carasousel-employees-contorol-prev {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  top: calc(50% - 25px);
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.carasousel-employees-contorol-next{
+  right: 62px;
+}
+
+.carasousel-employees-contorol-prev{
+  left: 62px;
+}
+
+
+.arrow-blue {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background: url("../img/icons/arrow-blue.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.carasousel-employees-contorol-next > .arrow-blue{
+  transform: rotate(180deg);
+}
+
+.title-section {
+  margin: 0;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 18px;
+}
+
+
+.card-update{
+  width: 270px;
+  height: 100%;
+
+  border: none;
+  border-radius: 0;
+
+  text-decoration: none;
+}
+
+.card-update:hover{
+  box-shadow: 0 0 35px #cccccc;
+}
+
+.card-update:hover .card-update-text{
+  color: #0022ff;
+}
+
+.card-update > .card-body{
+  padding: 27px 32px 32px 27px;
+}
+
+.card-update-text {
+  margin: 0;
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 16px;
+  color: #787878;
+}
+
+
+
