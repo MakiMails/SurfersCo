@@ -410,23 +410,38 @@
 }
 
 .title-section {
-  margin: 0;
+  
   font-family: "MontserratRegular", sans-serif;
   font-size: 18px;
 }
 
+.title-big-section{
+  margin: 0;
+  padding: 0;
+  font-family: "MontserratBold", sans-serif;
+  font-size: 99px;
+  color: rebeccapurple;
+  /* color: #f7f7f7; */
+}
+
+.backgroud-instagram{
+  padding: 0;
+  padding-top: 65px;
+  background: url('../img/Instagram.jpg') no-repeat;
+}
 
 .card-update{
   width: 270px;
   height: 100%;
 
-  border: none;
+  border: 1px solid transparent;
   border-radius: 0;
 
   text-decoration: none;
 }
 
 .card-update:hover{
+  border-color: #0022ff;
   box-shadow: 0 0 35px #cccccc;
 }
 
@@ -445,5 +460,20 @@
   color: #787878;
 }
 
+.mt-180px{
+  margin-top: 180px;
+}
 
+.mt-120px{
+  margin-top: 120px;
+}
+
+.banner-link-instagram{
+  display: block;
+  width: 620px;
+  padding: 15px 20px;
+  margin-top: 24px;
+  text-decoration: none;
+  border: 1px solid #000000;
+}
 
