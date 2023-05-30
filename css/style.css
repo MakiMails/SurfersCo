@@ -46,6 +46,27 @@
   src: url("../fonts/raleway-bold.woff2") format("woff2"), url("../fonts/raleway-bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "RobotoCondensedBold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/roboto-condensed-bold.woff2") format("woff2"), url("../fonts/roboto-condensed-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RalewaySemiBold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/raleway-semi-bold.woff2") format("woff2"), url("../fonts/raleway-semi-bold.woff") format("woff");
+}
+
+
+footer{
+  background: #000000;
+}
+
 /* навигация */
 .logo {
   font-family: "MontserratBoald", sans-serif;
@@ -91,8 +112,8 @@
 
 /* предложкеа surfboards */
 
-.surfboards{
-  background: url('../img/background.jpg') no-repeat;
+.surfboards {
+  background: url("../img/background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -304,7 +325,7 @@
   color: #00b0ff;
 }
 
-.card-employee{
+.card-employee {
   text-decoration: none;
   transition: 0.2s;
 }
@@ -347,7 +368,6 @@
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
-  
 }
 
 .address {
@@ -386,14 +406,13 @@
   z-index: 1;
 }
 
-.carasousel-employees-contorol-next{
+.carasousel-employees-contorol-next {
   right: 62px;
 }
 
-.carasousel-employees-contorol-prev{
+.carasousel-employees-contorol-prev {
   left: 62px;
 }
-
 
 .arrow-blue {
   display: inline-block;
@@ -405,17 +424,16 @@
   background-size: 100% 100%;
 }
 
-.carasousel-employees-contorol-next > .arrow-blue{
+.carasousel-employees-contorol-next > .arrow-blue {
   transform: rotate(180deg);
 }
 
 .title-section {
-  
   font-family: "MontserratRegular", sans-serif;
   font-size: 18px;
 }
 
-.title-big-section{
+.title-big-section {
   margin: 0;
   padding: 0;
   font-family: "MontserratBold", sans-serif;
@@ -424,13 +442,13 @@
   /* color: #f7f7f7; */
 }
 
-.backgroud-instagram{
+.backgroud-instagram {
   padding: 0;
   padding-top: 65px;
-  background: url('../img/Instagram.jpg') no-repeat;
+  background: url("../img/Instagram.jpg") no-repeat;
 }
 
-.card-update{
+.card-update {
   width: 270px;
   height: 100%;
 
@@ -440,16 +458,16 @@
   text-decoration: none;
 }
 
-.card-update:hover{
+.card-update:hover {
   border-color: #0022ff;
   box-shadow: 0 0 35px #cccccc;
 }
 
-.card-update:hover .card-update-text{
+.card-update:hover .card-update-text {
   color: #0022ff;
 }
 
-.card-update > .card-body{
+.card-update > .card-body {
   padding: 27px 32px 32px 27px;
 }
 
@@ -460,20 +478,123 @@
   color: #787878;
 }
 
-.mt-180px{
+.mt-180px {
   margin-top: 180px;
 }
 
-.mt-120px{
+.mt-120px {
   margin-top: 120px;
 }
 
-.banner-link-instagram{
-  display: block;
+.banner-link-instagram {
+  display: flex;
+  align-items: center;
+
   width: 620px;
   padding: 15px 20px;
   margin-top: 24px;
+
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 16px;
   text-decoration: none;
+
   border: 1px solid #000000;
 }
 
+.banner-link-instagram span {
+  display: inline-block;
+  margin: 0 22px;
+  font-family: " RobotoCondensedBold", sans-serif;
+  font-size: 24px;
+}
+
+.list-ul-links{
+  display: flex;
+  
+}
+
+.ul-links{
+  list-style-type: none;
+  margin-right: 66px;
+  padding: 0;
+}
+
+.ul-links > li::before{
+  content: url('../img/icons/waves-yellow.svg');
+  margin-right: 8px;
+}
+
+.ul-links > li > a{
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.subcribe-section{
+  padding-bottom: 5px;
+  border-bottom: 1px solid #4d4d4d;
+  width: 295px;
+}
+
+.subcribe-section > label{
+  display: block;
+  font-family: "MontserratRegular", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.email-icon{
+  display: inline-block;
+  width: 16px;
+  height: 11px;
+  background: url("../img/icons/email.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.email-input{
+  width: 242px;
+
+  font-family: "RalewayRegular", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  border: none;
+  background: transparent;
+}
+
+.bnt-submit{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background: #00b0ff;
+  border-radius: 50%;
+}
+
+.bnt-submit > .arrow {
+  transform: rotate(180deg);
+}
+
+.designers-signature{
+  font-family: "RalewaySemiBold", sans-serif;
+  font-size: 12px;
+  color:#3e3e3e;
+}
+
+.designers-signature > span{
+  display: inline-block;
+  margin: 0 12px;
+}
+
+
+.mt-60px{
+  margin-top: 60px;
+}
+
+.pt-40px{
+  padding-top: 40px;
+}
